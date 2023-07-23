@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #000;
+    color: #fff;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(/images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.language-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+.language-btn img {
+    width: 10px;
+    margin-left: 10px;
+}
+.header-content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.header-content h1{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 600;
+    
+}
+.header-content h3{
+    font-weight: 400px;
+    margin-bottom: 20px;
+}
+.email-form{
+   margin-top: 30px;
+   overflow: hidden;
+   
+   display: flex;
+   align-items: center;
+}
+.email-form input{
+    border: 1px solid #7f7777;
+    outline: 0;
+    background: transparent;
+    height: 56px;
+    width: 370px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.email-form button{
+ background: #db0001;
+ border: 0;
+ outline: 0;
+ color: #fff;
+ font-size: 20px;
+ font-weight: 700;
+ cursor: pointer;
+ height: 56px;
+ width: 200px;
+ border-radius: 4px;
+}
+ /* features */
+
+
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.text-col h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+/* faq */
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordian li{
+    width: 100%;
+    list-style: none;
+    padding: 5px;
+}
+.accordian li label{
+    display: flex;
+    align-items: center;
+    background: #303030;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordian .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+    
+}
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(45deg);
+}
+.faq small{
+    font-size: 20px;
+}
+.faq .email-form{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.footer{
+    padding: 50px 12% 10px;
+    border-top: 6px solid #333;
+    color: 777;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 33%;
+    flex-grow: 1;
+
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.footer .language-btn{
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+.copyright-text{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
